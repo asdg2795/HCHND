@@ -1,0 +1,66 @@
+		body{
+                background-color: #202020;
+
+		}
+         #container{
+             color : white;
+             text-decoration: none;
+         }
+
+             #MainSection{
+         /*flex-grow: 3;*/
+            width : 1300px;
+            margin : 0 auto;
+             }
+             #MainSection>#content{
+              border-radius: 20px;
+              box-shadow: 5px 5px 5px 5px lightgray;
+              height:500px;
+
+             }
+                 #MainSection > div >img{
+                 margin-top : 25px;
+                 margin-left : 20px;
+                 margin-right : 50px;
+                 width : 450px;
+                 float:left;
+                 height : 450px;
+                 border-radius : 10%;
+
+             }
+
+             ul,li{
+                 list-style-type: none;
+                 margin : 0px;
+                 padding : 0px;
+             }
+
+             h2{
+                 color : rgb(231, 76, 60);
+                 text-align: center;
+                 font-size: 50px;
+                 text-shadow: 5px 5px black;
+             }
+
+             #MainSection > #content > ul{
+                 float : left;
+                 width : 700px;
+                 height : 600px;
+                 margin-top : 30px;
+             }
+
+             #side > div{
+                 display: flex;
+                 flex-direction: row;
+              margin : auto;
+             }
+
+             #side > div > li{
+                 color : white;
+                 text-align: left;
+                 font-size: 1.5rem;
+                 flex-grow: 1;
+                 width : 33%;
+                 margin-bottom: 20px;
+             }
+             

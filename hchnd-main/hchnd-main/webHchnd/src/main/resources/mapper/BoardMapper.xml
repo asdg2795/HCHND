@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.hchnd.mapper.BoardMapper">
+	<insert id="boardInsert">
+		insert into board(subject, content, uid, ip, category)
+		values(#{subject}, #{content}, #{uid}, #{ip}, #{category} )
+	</insert>
+	<select id="boardPageList" resultType="com.web.hchnd.vo.BoardVO">
+		select no, subject, uid, hit, date_format(writedate, '%m-%d %h:%i' ) writedate, hidden, category
+		from board
+		<if test="searchWord!=null">
+		where ${searchKey} like '%${searchWord}%'
+		</if>
+		order by no desc
+		limit ${onePageRecord} offset ${offsetPoint}
+	</select>
+	<select id="totalRecord">
+		select count(no) from board	
+	<if test="searchWord!=null">
+		where ${searchKey} like '%${searchWord}%'
+	</if>
+	</select>
+	<select id="boardSelect" resultType="com.web.hchnd.vo.BoardVO">
+		select no, subject, content, uid, hit, writedate category from board
+		where no=${param1}
+	</select>
+	<update id="hitCount">
+		update board set hit=hit+1 where no=${param1}		
+	</update>
+	<select id="heartCount" resultType="com.web.hchnd.vo.BoardVO">
+		select count(*) from heart
+	</select>
+	<update id="boardUpdate">
+		update board set subject=#{subject}, content=#{content}, category=#{category} where no=${no}
+	</update>
+	<delete id="boardDelete">
+		delete from board where no=${Param1}
+	</delete>
+	<select id="boardSelect2" resultType="com.web.hchnd.vo.BoardVO">
+        SELECT * FROM Board b JOIN category c ON b.category = c.keyNo
+        WHERE no=#{param1} AND category=#{param2};
+    </select>
+    <select id="findWriterName" resultType="com.web.hchnd.vo.AccountVO">
+        SELECT nickname, profileImgName FROM user u JOIN profile p ON u.UID = p.UID WHERE u.UID=#{param1}
+    </select>
+    <select id="boardPageList2" resultType="com.web.hchnd.vo.CertifyBoardVO">
+		select no, subject, uid, hit, date_format(writedate, '%m-%d %h:%i' ) writedate, hidden, category, imagename
+		from certifyboard
+		<if test="searchWord!=null">
+		where ${searchKey} like '%${searchWord}%'
+		</if>
+		order by no desc
+		limit ${onePageRecord} offset ${offsetPoint}
+	</select>
+</mapper>

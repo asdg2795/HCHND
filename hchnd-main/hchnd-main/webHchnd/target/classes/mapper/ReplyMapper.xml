@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.hchnd.mapper.ReplyMapper">
+	<insert id="replyInsert">
+		insert into reply(uid, articleno, comment) values(#{uid}, ${articleno}, #{comment})
+	</insert>
+	<select id="replySelect" resultType="com.web.hchnd.vo.BoardReplyVO">
+		select replyno, articleno, comment, uid, writedate from reply where no=${param1}
+	</select>
+	<update id="replyUpdate">
+		update reply set comment=#{comment} where replyno=${replyno}
+	</update>
+	<delete id="replyDelete">
+	delete from reply where replyno=${param1}
+	</delete>
+</mapper>

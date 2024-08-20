@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.hchnd.mapper.ProgramDescMapper">
+	<select id="programPageList" resultType="com.web.hchnd.vo.ProgramDescVO">
+		select programNo, prgName, prgExpl from prgdesc
+		<if test="searchWord!=null">
+		where ${searchKey} like '%${searchWord}%'
+		</if>
+		order by programNo desc
+		limit ${onePageRecord} offset ${offsetPoint}
+	</select>
+	
+	<select id="prgSelect" resultType="com.web.hchnd.vo.ProgramDescVO">
+		select programNo, prgName, prgExpl from prgdesc where programNo=${param1}
+	</select>
+	
+	<select id="totalRecord">
+		select count(programNo) from prgdesc
+	
+	<if test="searchWord!=null">
+		where ${searchKey} like '%${searchWord}%'
+	</if>
+	</select>
+
+</mapper>

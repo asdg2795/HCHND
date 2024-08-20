@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.hchnd.mapper.HeartMapper">
+	<insert id="heartInsert">
+		insert into heart(articleNo, uid)
+		values(#{articleNo} #{uid})
+	</insert>
+	<select id="boardHeart1" resultType="com.web.hchnd.vo.HeartVO">
+		select articleNo, uid from Heart
+	</select>
+	
+</mapper>

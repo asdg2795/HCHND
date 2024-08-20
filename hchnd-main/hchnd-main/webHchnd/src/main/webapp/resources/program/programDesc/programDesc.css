@@ -1,0 +1,81 @@
+body{
+				
+				background-color: #202020;
+   
+}
+
+
+a:link, a:visited{
+	text-decoration: none;
+	color : white;
+}
+
+	#MainSection>ul>div>img{
+		border : 1px solid white;
+		width : 250px;
+		height : 250px;
+
+	}
+	
+
+/*bodies 페이지*/
+#container{
+		color : white;
+		text-decoration: none;  
+}
+
+/*전체 리스트 설정*/
+
+#MainSection{
+    /*flex-grow: 3;*/
+    margin-bottom: 100px;
+    width: 100%;
+
+}
+	#MainSection>ul{
+			width : 1000px;
+			margin : 0 auto;
+		}
+
+		ul,li{
+			list-style-type : none;
+			margin : 0px;
+			padding : 0px;
+		}
+		#MainSection>#top{
+			margin-top : 100px;
+		}
+		#MainSection>#middle{
+			margin-top: 400px;
+		}
+		#MainSection>#bottom{
+			margin-top: 700px; 
+		
+		}
+		#MainSection > #top, #MainSection > #bottom, #MainSection > #middle{
+		 margin-bottom : 100px;
+		}
+	#dialogOpen1_1, #dialogOpen2_1, #dialogOpen3_1{
+		float : left;
+		margin-right : 125px;
+	}		
+	
+	#dialogOpen1_2, #dialogOpen2_2, #dialogOpen3_2{
+		float : left;
+		margin-right : 125px;
+		
+	}
+	#dialogOpen1_3, #dialogOpen2_3, #dialogOpen3_3{
+		float: left;
+	}
+
+	#dialog{
+		background-color: white;
+		height: 500px;
+	}
+	#dialog>ul>img{
+		float:left;
+		margin:50px;
+		margin-bottom:200px;
+		background: white;
+	}

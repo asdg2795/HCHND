@@ -1,0 +1,141 @@
+
+			body{
+							
+				background-color: #202020;
+			   
+			}
+
+			#container{
+					color : white;
+					text-decoration: none;  
+			}
+				#MainSection{
+    		/*flex-grow: 3;*/
+   			width : 1300px; margin:0 auto;;
+			}
+			
+			#main{
+				margin-left : 50px;
+				margin-right:150px;
+				width : 450px;
+				height : 500px;
+				padding : 10px;
+				border : 2px solid #ddd;
+				border-radius : 10%;
+				margin-top : 30px;
+				float:left; 
+				background-color: black;
+			} 
+			#head{
+				padding : 10px 0;
+				
+				text-align: center;
+				font-size:1.5em;
+				color : white;
+				font-weight: bold;
+				
+			}
+			ul,li {
+	        margin: 0;
+	        padding: 0;
+	        list-style-type: none;
+	    }
+    
+    #cal_view>ul {
+        overflow: auto;
+        
+    }
+    #cal_view li {
+					border-radius: 5px;
+					height: 68px;
+					font-weight: bold;
+					background-color: white;
+					border : 1px solid ;
+        float: left;
+        width: 14.28%;
+        text-align: center;
+        color : black;
+        padding: 10px 0;
+        cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    }
+    .planner {
+    
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    
+    
+    text-align: left;}
+
+		.planner>h1 {
+  			 color: white;
+		}
+
+		.planner >	ul {
+			    list-style: none;
+			    padding: 0;
+			}
+			
+			.planner>li {
+			    margin-bottom: 10px;
+			}
+			
+			.planner>input[type="checkbox"] {
+			    margin-right: 10px;
+			}
+			
+			.planner>label {
+			    font-weight: bold;
+			    margin-right: 10px;
+			}
+			
+			.planner>p {
+			    margin: 0;
+			}
+			.planner > label input[type="checkbox"] {
+				 display: none;
+				}
+							
+		.planner > label span {
+		    display: inline-block;
+		    width: 22px;
+		    height: 22px;
+		    margin: -2px 10px 0 0;
+		    vertical-align: middle;
+		    border-radius: 5px;
+		    cursor: pointer;
+		    border: 1px solid red;
+		}
+		/*.planner > h1{
+				
+		}*/
+		.planner > label input[type="checkbox"]:checked + span {
+		    background: red;
+		}
+    #selected_date{
+					text-align: right;
+					color : white;
+					font-size : 20px;
+					font-weight: bold;
+					float : right;
+					
+				}
+				#selected_Main{
+					width : 500px;
+					float : left;
+
+				}
+			h2{
+					color : rgb(231, 76, 60);
+					font-size: 50px;
+					text-shadow : 5px 5px black;
+				}	
+				
+				
+				.selected{
+     background-color: rgb(52,152,219) !important; /* 선택된 날짜의 배경색 */
+    }
+    .yellow_back{
+					background-color: yellow !important;
+				}
+    
