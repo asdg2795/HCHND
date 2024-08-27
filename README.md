@@ -7,9 +7,9 @@
  - 관리 툴 : Git
 
 # 프로젝트 기술 스택
-프론트엔드 : HTML, CSS, JS, JQuery, AJax
-백엔드 : Spring Boot, Java, Jsp
-데이터베이스 : MySQL, Apache Tomcat, MyBatis
+ - 프론트엔드 : HTML, CSS, JS, JQuery, AJax
+ - 백엔드 : Spring Boot, Java, Jsp
+ - 데이터베이스 : MySQL, Apache Tomcat, MyBatis
 
 # 프로젝트 DB 모델링
 ![image](https://github.com/user-attachments/assets/954a83e8-3208-4acb-9c52-512ef28e4570)
