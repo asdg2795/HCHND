@@ -1,15 +1,33 @@
-# 프로젝트 개발환경
- - 운영체제 : Window
- - 통합개발환경 : STS4
- - JDK 버전 : JDK 11
- - 데이터베이스 : MySQL
- - 빌드 툴 : Maven
- - 관리 툴 : Git
+# 프로젝트 소개
+① 피트니스 환경과 효과적인 운동 루틴 <br>
+② 사용자 교류 활성화 및 커뮤니티 형성
 
-# 프로젝트 기술 스택
- - 프론트엔드 : HTML, CSS, JS, JQuery, AJax
- - 백엔드 : Spring Boot, Java, Jsp
- - 데이터베이스 : MySQL, Apache Tomcat, MyBatis
+# 팀원 소개
+| FullStack | FullStack | FullStack | FullStack | FullStack |
+|-----------|-----------|-----------|-----------|-----------|
+| <img src="https://github.com/user-attachments/assets/24ffeafb-0e34-429b-9ddd-aaccd10288c0" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/7646ac7e-2def-4606-a62f-f528744ef92b" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/69205166-8259-4282-9da5-bbbbb1f598de" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/273d183c-c94e-4e7c-aa96-b1e21d64feca" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/2560605d-2ecd-49bf-b01c-d696d08fdd0b" width="150" height="150"> |
+| 김준수 | 김현주 | 이선왕 | 이건아 | 채아진 |
+
+
+
+# 기여한 부분
+- 팀 리더
+- 프로젝트 전체 총괄 및 풀스택 개발
+- 공통 템플릿 작업 및 사전 환경 셋팅 작업
+- 메인 프로그램 페이지 구상 및 구현
+    - 운동 프로그램 별 로직 구현
+    - 캘린더 수행 날짜 표시 로직 구현
+# 프로젝트 활용 기술
+![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD.svg?&style=for-the-badge&logo=jQuery&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white)
+![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F.svg?&style=for-the-badge&logo=SpringBoot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white)
+![git](https://img.shields.io/badge/git-F05032.svg?&style=for-the-badge&logo=git&logoColor=white)
+![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75.svg?&style=for-the-badge&logo=Tomcat&logoColor=white)
+
 
 # FlowChart
 ![image (4)](https://github.com/user-attachments/assets/03b9fc89-c3eb-434c-8257-c16ca191408e)
